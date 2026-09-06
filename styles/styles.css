@@ -1,10 +1,30 @@
+nav{
+    background-color: rgb(10, 107, 218);
+    padding: 0;
+}
+
+nav a{
+    display: block;
+    padding: .5rem;
+    color: white;
+}
+
+
 main{
     max-width: 840px;
+}
+
+main h1{
+    color: #333;
 }
 main img{
     width: 150px;
     height: auto;
+    padding: 0;
+    border: 1px solid black;
+    box-shadow: 0 0 30px #333;
 }
+
 p{
     padding: 0;
 }
