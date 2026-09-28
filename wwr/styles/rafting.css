@@ -174,6 +174,203 @@ section h2{
     font-family: candara;
 }
 
+
+
+
+
+
+/* STYLING FOR CONTACT PAGE */
+
+#company-information{
+    text-align: center;
+}
+
+.contact-section{
+    display: flex;
+}
+
+
+.map {
+    width: 50%;
+}
+
+.map-marker {
+    width: 100%;
+    height: 100%;
+}
+
+.map-marker iframe{
+    width: inherit;
+    height: inherit;
+}
+
+/* CONTACT FORM */
+
+.contact-form {
+    padding: 5px 5%;
+    width: 50%;
+}
+
+form {
+    width: 100%;
+}
+
+.form-row,
+.purpose-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.message-row{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+
+.form-row label,
+.purpose-row > label,
+.message-row > label {
+    font-size: 16px;
+    padding-top: 7px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+    height: 38px;
+}
+
+textarea {
+    height: 75px;
+    resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #aaa;
+}
+
+/* Radio buttons */
+
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.radio-options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.radio-options input {
+    width: 18px;
+    height: 18px;
+}
+
+/* Newsletter */
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+    font-size: .8rem;
+}
+
+.newsletter input {
+    width: 18px;
+    height: 18px;
+}
+
+/* Button */
+
+button {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    background-color: #e5e5e5;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d5d5d5;
+}
+
+/* EMPLOYEE SECTION */
+
+.employees {
+    padding: 10px 10%;
+    background-color: #e5e5e5;
+}
+
+.employees h2 {
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+    background-color:transparent;
+    margin-bottom: 5px;
+}
+
+.employee-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15%;
+    justify-items: center;
+}
+
+.employee {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile-image {
+    width: 120px;
+    height: 100px;
+    background-color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.profile-image span {
+    font-size: 35px;
+}
+
+.employee p {
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
 footer{
     border-top: 1px solid #000;
     display: grid;
