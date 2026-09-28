@@ -347,29 +347,26 @@ button:hover {
 .profile-image {
     width: 120px;
     height: 100px;
-    background-image: url('../../images/salt-lake-temple.jpg');
     margin-bottom: 5px;
     position: relative;
 }
 
+.profile-image img{
+    width: 120px;
+    height: 100%;
+}
+
 .profile-image span {
-    font-size: 35px;
+    font-size: 25px;
     position: absolute;
+    top: 2px;
+    right: 2px;
 
 }
 
 .employee p {
     font-size: 13px;
 }
-
-
-
-
-
-
-
-
-
 
 
 footer{
