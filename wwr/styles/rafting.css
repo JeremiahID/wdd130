@@ -202,6 +202,7 @@ section h2{
 .map-marker iframe{
     width: inherit;
     height: inherit;
+    border: 0;
 }
 
 /* CONTACT FORM */
