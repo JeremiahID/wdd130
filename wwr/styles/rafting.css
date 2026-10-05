@@ -188,10 +188,6 @@ section h2{
 }
 
 
-
-
-
-
 /* STYLING FOR CONTACT PAGE */
 
 #company-information{
@@ -552,31 +548,233 @@ tbody tr:nth-child(even) {
     line-height: 1.7;
 }
 
-/* Responsive Design */
+/* HOME PAGE */
 
-@media (max-width: 900px) {
+/* HERO */
 
-    .trip-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
+.home-hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
 }
 
-@media (max-width: 600px) {
-
-    .trip-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .trips-hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .trips-hero {
-        min-height: 350px;
-    }
-
+.home-hero > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
+
+
+.hero-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 750px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.hero-message h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-message p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* HERO BUTTON */
+
+.hero-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 28px;
+    background-color: #0b5d7a;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background-color: #083f52;
+}
+
+/* INTRODUCTION */
+
+.home-introduction {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-introduction h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.home-introduction p {
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+
+.home-grid {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* GRID CARDS */
+
+.home-grid-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.home-grid-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.grid-content {
+    padding: 25px;
+}
+
+.grid-content h2 {
+    margin-bottom: 12px;
+}
+
+.grid-content p {
+    line-height: 1.7;
+}
+
+
+.home-cta {
+    margin-top: 50px;
+    padding: 70px 20px;
+    text-align: center;
+    background-color: #e8f4f8;
+}
+
+.cta-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.home-cta h2 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+
+.home-cta p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #0b5d7a;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #083f52;
+}
+
+
+
+.newsletter {
+    padding: 70px 20px;
+    background-color: #f5f5f5;
+}
+
+.newsletter-content {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.newsletter p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* FORM */
+
+.newsletter form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 15px;
+    align-items: end;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 13px;
+    width: 200px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+.form-group input::placeholder {
+    font-size: .8rem;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0b5d7a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.newsletter button:hover {
+    background-color: #083f52;
+}
+
+
 
 
 footer{
